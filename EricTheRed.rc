@@ -1,0 +1,26 @@
+id ICON "d:/programming/eric-the-red/EricTheRed.ico"
+
+1 VERSIONINFO
+FILEVERSION     1,0,1,0
+PRODUCTVERSION  1,0,1,0
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "040904E4"
+    BEGIN
+      VALUE "CompanyName", "Richard Sanders"
+      VALUE "FileDescription", "EricTheRedConfig"
+      VALUE "FileVersion", "1.0.1"
+      VALUE "InternalName", "EricTheRedConfig"
+      VALUE "LegalCopyright", "Richard Sanders"
+      VALUE "OriginalFilename", "EricTheRedConfig"
+      VALUE "ProductName", "EricTheRedConfig"
+      VALUE "ProductVersion", "1.0.1"
+    END
+  END
+
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x409, 1252
+  END
+END

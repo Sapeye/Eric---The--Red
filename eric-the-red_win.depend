@@ -1,0 +1,216 @@
+# depslib dependency file v1.0
+1448395941 source:d:\programming\eric-the-red\ericthered.rc
+
+1450574352 source:d:\programming\eric-the-red\inifile.cpp
+	"main.h"
+	<FL/fl_ask.H>
+	<malloc.h>
+	<stdio.h>
+	<errno.h>
+
+1449335276 d:\programming\eric-the-red\main.h
+	<FL/Fl.H>
+	<FL/Fl_Double_Window.H>
+	<FL/Fl_Button.H>
+	<FL/Fl_Group.H>
+	<FL/Fl_Input.H>
+	<FL/Fl_Box.H>
+	<FL/Fl_Int_Input.H>
+	<FL/Fl_Choice.H>
+	<FL/Fl_Output.H>
+	<FL/Fl_Help_View.H>
+
+1440542001 d:\codeblocks\mingw\msys\1.0\local\include\fl\fl.h
+	<FL/Fl_Cairo.H>
+	"fl_utf8.h"
+	"Enumerations.H"
+
+1440542001 d:\codeblocks\mingw\msys\1.0\local\include\fl\fl_cairo.h
+	<FL/Fl_Export.H>
+	<cairo-xlib.h>
+	<cairo-win32.h>
+	<cairo-quartz.h>
+
+1440542002 d:\codeblocks\mingw\msys\1.0\local\include\fl\fl_export.h
+
+1440542009 d:\codeblocks\mingw\msys\1.0\local\include\fl\fl_utf8.h
+	"Fl_Export.H"
+	"fl_types.h"
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<locale.h>
+	<ctype.h>
+	<wchar.h>
+	<sys/stat.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<X11/Xlocale.h>
+	<X11/Xlib.h>
+	<locale.h>
+
+1440542009 d:\codeblocks\mingw\msys\1.0\local\include\fl\fl_types.h
+
+1440542001 d:\codeblocks\mingw\msys\1.0\local\include\fl\enumerations.h
+	"Fl_Export.H"
+	"fl_types.h"
+
+1440542002 d:\codeblocks\mingw\msys\1.0\local\include\fl\fl_double_window.h
+	"Fl_Window.H"
+
+1440542008 d:\codeblocks\mingw\msys\1.0\local\include\fl\fl_window.h
+	<windows.h>
+	"Fl_Group.H"
+	"Fl_Bitmap.H"
+	<stdlib.h>
+
+1440542003 d:\codeblocks\mingw\msys\1.0\local\include\fl\fl_group.h
+	"Fl_Widget.H"
+
+1440542008 d:\codeblocks\mingw\msys\1.0\local\include\fl\fl_widget.h
+	"Enumerations.H"
+	<stdint.h>
+	<stddef.h>
+
+1440542001 d:\codeblocks\mingw\msys\1.0\local\include\fl\fl_bitmap.h
+	"Fl_Image.H"
+
+1440542003 d:\codeblocks\mingw\msys\1.0\local\include\fl\fl_image.h
+	"Enumerations.H"
+	<stdlib.h>
+
+1440542001 d:\codeblocks\mingw\msys\1.0\local\include\fl\fl_button.h
+	"Fl_Widget.H"
+
+1440542003 d:\codeblocks\mingw\msys\1.0\local\include\fl\fl_input.h
+	"Fl_Input_.H"
+
+1440542003 d:\codeblocks\mingw\msys\1.0\local\include\fl\fl_input_.h
+	"Fl_Widget.H"
+
+1440542001 d:\codeblocks\mingw\msys\1.0\local\include\fl\fl_box.h
+	"Fl_Widget.H"
+
+1440542004 d:\codeblocks\mingw\msys\1.0\local\include\fl\fl_int_input.h
+	"Fl_Input.H"
+
+1440542001 d:\codeblocks\mingw\msys\1.0\local\include\fl\fl_choice.h
+	"Fl_Menu_.H"
+
+1440542004 d:\codeblocks\mingw\msys\1.0\local\include\fl\fl_menu_.h
+	"Fl_Widget.H"
+	"Fl_Menu_Item.H"
+
+1440542004 d:\codeblocks\mingw\msys\1.0\local\include\fl\fl_menu_item.h
+	"Fl_Widget.H"
+	"Fl_Image.H"
+
+1440542005 d:\codeblocks\mingw\msys\1.0\local\include\fl\fl_output.h
+	"Fl_Input.H"
+
+1440542003 d:\codeblocks\mingw\msys\1.0\local\include\fl\fl_help_view.h
+	<stdio.h>
+	"Fl.H"
+	"Fl_Group.H"
+	"Fl_Scrollbar.H"
+	"fl_draw.H"
+	"Fl_Shared_Image.H"
+	"filename.H"
+
+1440542006 d:\codeblocks\mingw\msys\1.0\local\include\fl\fl_scrollbar.h
+	"Fl_Slider.H"
+
+1440542006 d:\codeblocks\mingw\msys\1.0\local\include\fl\fl_slider.h
+	"Fl_Valuator.H"
+
+1440542008 d:\codeblocks\mingw\msys\1.0\local\include\fl\fl_valuator.h
+	"Fl_Widget.H"
+
+1440542008 d:\codeblocks\mingw\msys\1.0\local\include\fl\fl_draw.h
+	<FL/x.H>
+	<FL/Enumerations.H>
+	<FL/Fl_Window.H>
+	<FL/Fl_Device.H>
+
+1440542009 d:\codeblocks\mingw\msys\1.0\local\include\fl\x.h
+	"Enumerations.H"
+	"win32.H"
+	"mac.H"
+	<X11/Xlib.h>
+	<X11/Xutil.h>
+	<X11/Xatom.h>
+	"Fl_Window.H"
+
+1440542009 d:\codeblocks\mingw\msys\1.0\local\include\fl\win32.h
+	<windows.h>
+	<FL/Fl_Window.H>
+
+1440542009 d:\codeblocks\mingw\msys\1.0\local\include\fl\mac.h
+	<FL/Fl_Widget.H>
+	<ApplicationServices/ApplicationServices.h>
+	"Fl_Window.H"
+	"../src/Fl_Font.H"
+
+1440542002 d:\codeblocks\mingw\msys\1.0\local\include\fl\fl_device.h
+	<FL/x.H>
+	<FL/Fl_Plugin.H>
+	<FL/Fl_Image.H>
+	<FL/Fl_Bitmap.H>
+	<FL/Fl_Pixmap.H>
+	<FL/Fl_RGB_Image.H>
+	<stdlib.h>
+
+1440542005 d:\codeblocks\mingw\msys\1.0\local\include\fl\fl_plugin.h
+	"Fl_Preferences.H"
+
+1440542005 d:\codeblocks\mingw\msys\1.0\local\include\fl\fl_preferences.h
+	<stdio.h>
+	"Fl_Export.H"
+
+1440542005 d:\codeblocks\mingw\msys\1.0\local\include\fl\fl_pixmap.h
+	"Fl_Image.H"
+	"x.H"
+
+1440542005 d:\codeblocks\mingw\msys\1.0\local\include\fl\fl_rgb_image.h
+	"Fl_Image.H"
+
+1440542006 d:\codeblocks\mingw\msys\1.0\local\include\fl\fl_shared_image.h
+	"Fl_Image.H"
+
+1440542008 d:\codeblocks\mingw\msys\1.0\local\include\fl\filename.h
+	"/usr/include/dirent.h"
+	"Fl_Export.H"
+	<FL/filename.H>
+	<sys/types.h>
+	<direct.h>
+	<sys/types.h>
+	<dirent.h>
+
+1440542008 d:\codeblocks\mingw\msys\1.0\local\include\fl\fl_ask.h
+	"Enumerations.H"
+
+1447640478 source:d:\programming\eric-the-red\isolate.cpp
+	"main.h"
+	<ctype.h>
+
+1449335276 source:d:\programming\eric-the-red\main.cpp
+	"main.h"
+	<FL/Fl_Image.H>
+
+1450255826 source:d:\programming\eric-the-red\worker.cpp
+	"main.h"
+	<FL/fl_ask.H>
+	"isolate.h"
+	"inifile.h"
+	<ctype.h>
+	<malloc.h>
+	<windows.h>
+	<winsock2.h>
+	<ws2tcpip.h>
+
+1447614000 d:\programming\eric-the-red\isolate.h
+
+1448704584 d:\programming\eric-the-red\inifile.h
+

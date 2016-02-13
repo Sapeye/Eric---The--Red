@@ -1,0 +1,32 @@
+-to <recipient> : recipient list (also -t) (comma separated)
+
+-subject <subj> : subject line, surround with quotes to include spaces(also -s)
+
+-bodyF <file>   : file containing the message body
+-body <text>    : message body, surround with quotes (") to include spaces
+
+-server <addr>  : specify SMTP server to be used (optionally, addr:port)
+
+-port <port>    : port to be used on the SMTP server, defaults to SMTP (25)
+
+-u <username>   : username for AUTH LOGIN (use with -pw)
+                  or for AUTH GSSAPI with -k
+-pw <password>  : password for AUTH LOGIN (use with -u)
+
+----------------------------------------------------------------------------------
+
+-debug          : echoes server communications to a log file or screen
+                  (overrides -q if echoes to the screen)
+-log <file>     : log everything but usage to <file>
+
+-overwritelog   : when -log is used, overwrite the log file
+
+------------------------------------------------------------------------------------
+
+-mailfrom <addr>   The RFC 821 MAIL From: statement
+-from <addr>       The RFC 822 From: statement
+
+-hostname <hst> : select the hostname used to send the message via SMTP
+                  this is typically your local machine name
+
+-i <addr>       : a 'From:' address, not necessarily known to the server

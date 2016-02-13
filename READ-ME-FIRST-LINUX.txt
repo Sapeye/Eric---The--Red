@@ -1,0 +1,25 @@
+With root privileges in a consul window, type the following.
+
+mkdir /anyone
+
+chmod 777 /anyone
+
+mkdir /anyone/eric-the-red
+
+chmod 777 /anyone/eric-the-red
+
+The new anyone directory is useful because any user has read + write privileges.
+However the root will have to do the "chmod 777 /(new directory path)" as root owns the directory.
+
+Every thing to do with "EricTheRed" must be in this directory because it is hard coded into the software.
+This will be:
+- EricTheRedConfig (not required on the remote site but useful when you are there)
+- EricTheRedWorker (only required at the remote site)
+- eric-the-red.ini (When you upload a new eric-the-red.ini, this is where you put it,
+                    EricTheRedConfig writes it's updated copies here as well)
+
+Dependencies. There are non, the software is stand alone.
+
+Other requirements. wget and sendmail must be installed and will be in almost all Linux instillations.
+Just double check that it is on yours and install if necessary.
+Also make sure that "EricTheRedConfig" and "EricTheRedWorker" are checked off as executable or you will be up that infamous creek and no paddle.

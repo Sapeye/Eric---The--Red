@@ -1,0 +1,25 @@
+Make a new folder "c:/eric-the-red"
+
+Every thing to do with "EricTheRed" must be in this directory because it is hard coded into the software.
+This will be:
+- EricTheRedConfig.exe (not required on the remote site but useful when you are there)
+- EricTheRedWorker.exe (only required at the remote site)
+- eric-the-red.ini (When you upload a new eric-the-red.ini, this is where you put it,
+                    EricTheRedConfig.exe writes it's updated copies here as well)
+- wget.exe (Found in the supplied zip file)
+- blat.exe (Found in the supplied zip file)
+
+In the zip file all the executable files have been renamed to .ex_ to prevent ISP 
+email antivirsus is faging them a virsus when you send an email and also many
+antivirsus programmes will fag them the same way.
+
+On both the remote and home computer all the files in the zip files must be put in
+ c;/eric-the-red folder then the ex_files must then be renamed to exe.
+
+Usage EricTheRedConfig.exe must be run and it will right eric-the-red.ini will be
+written.   Eric-the-red.ini must then be copied to the remote site {c;/eric-the-red}.  A time schedule to run EricTheRedWorker.exe must be set up in windows
+schedule taste of a frequency of your choice { once a day would be sufficient }
+EricTheRedWorker.exe will check that the current IP of the remote site has or has not changed  and if it has changed you will be notified in email.   It will also
+detect other faults with the IP returns by the checking websites and notified you
+when this also happens by email, so that you can take corrective action, that involves you finding another website that will report your IP . EricTheRedConfig.exe will verify that the website you have chosen is actually 
+reporting correctly and is insink with the two other website that you have chosen.

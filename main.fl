@@ -1,0 +1,269 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0303 
+header_name {.h} 
+code_name {.cpp}
+Function {MainWindow(void)} {open
+} {
+  Fl_Window main_window {
+    label {Eric The Red configuration } open
+    xywh {2150 111 480 320} type Double color 51 labelcolor 4 align 80 visible
+  } {
+    Fl_Button {button[0]} {
+      label {Resolving websites}
+      user_data 0
+      callback ShowGroupCB
+      xywh {5 11 97 40} box GTK_UP_BOX color 206 selection_color 166 align 144
+      code0 {o->labelcolor((Fl_Color)59);}
+    }
+    Fl_Button {button[1]} {
+      label {SMTP server}
+      user_data 1
+      callback ShowGroupCB
+      xywh {5 54 97 40} box GTK_UP_BOX color 206 selection_color 166 align 144 deactivate
+    }
+    Fl_Button {button[2]} {
+      label {Email configuration}
+      user_data 2
+      callback ShowGroupCB
+      xywh {5 97 97 40} box GTK_UP_BOX color 206 selection_color 166 align 144 deactivate
+    }
+    Fl_Button {button[3]} {
+      label {IP address isolator}
+      user_data 3
+      callback ShowGroupCB
+      xywh {5 140 97 40} box GTK_UP_BOX color 206 selection_color 166 align 144 deactivate
+    }
+    Fl_Button save_done {
+      label {Save and finished}
+      user_data 4
+      callback SaveIniFile
+      xywh {5 183 97 40} box GTK_UP_BOX color 206 selection_color 166 align 128 deactivate
+    }
+    Fl_Button help_button {
+      label {?}
+      callback HelpCB
+      xywh {5 269 97 40} color 206 selection_color 166 labelfont 11 labelsize 37 labelcolor 4
+    }
+    Fl_Button {} {
+      label X
+      user_data 5
+      callback QuitCB
+      xywh {5 226 97 40} box GTK_UP_BOX color 206 selection_color 166 labelfont 11 labelsize 37 labelcolor 129
+    }
+    Fl_Group {group[0]} {
+      label {Resolving websites} open
+      xywh {109 21 370 297} box GTK_DOWN_FRAME labelcolor 4 align 5
+    } {
+      Fl_Group {} {
+        label {First test web site} open
+        xywh {120 38 347 72} box GTK_DOWN_FRAME labelcolor 60 align 5
+      } {
+        Fl_Input {web[0]} {
+          user_data {RIGHT_CLICK | 0}
+          callback TestUrlValidCB
+          xywh {135 45 240 25} box GTK_DOWN_BOX color 215 selection_color 166 when 1
+        }
+        Fl_Button {test[0]} {
+          label Test
+          user_data 0
+          callback DownloadTest
+          xywh {314 75 61 25} box GTK_UP_BOX color 206 selection_color 166
+        }
+        Fl_Box {go[0]} {
+          image {go.png} xywh {406 59 30 30} hide
+        }
+        Fl_Box {stop[0]} {
+          image {stop.png} xywh {406 59 30 30} hide
+        }
+        Fl_Box {amber[0]} {
+          image {amber.png} xywh {406 59 30 30} hide
+        }
+      }
+      Fl_Group {} {
+        label {Second test web site} open
+        xywh {120 127 347 72} box GTK_DOWN_FRAME labelcolor 60 align 5
+      } {
+        Fl_Input {web[1]} {
+          user_data {RIGHT_CLICK | 1}
+          callback TestUrlValidCB
+          xywh {135 134 240 25} box GTK_DOWN_BOX color 215 when 1 deactivate
+        }
+        Fl_Button {test[1]} {
+          label Test
+          user_data 1
+          callback DownloadTest
+          xywh {314 164 61 25} box GTK_UP_BOX color 206 selection_color 166 deactivate
+        }
+        Fl_Box {go[1]} {
+          image {go.png} xywh {406 148 30 30} hide
+        }
+        Fl_Box {stop[1]} {
+          image {stop.png} xywh {406 446 30 30} hide
+        }
+        Fl_Box {amber[1]} {
+          image {amber.png} xywh {406 148 30 30} hide
+        }
+      }
+      Fl_Group {} {
+        label {Third test web site} open
+        xywh {120 215 347 72} box GTK_DOWN_FRAME labelcolor 68 align 5
+      } {
+        Fl_Input {web[2]} {
+          user_data {RIGHT_CLICK | 2}
+          callback TestUrlValidCB
+          xywh {135 222 240 25} box GTK_DOWN_BOX color 215 when 1 deactivate
+        }
+        Fl_Button {test[2]} {
+          label Test
+          user_data 2
+          callback DownloadTest
+          xywh {314 254 61 25} box GTK_UP_BOX color 206 selection_color 166 deactivate
+        }
+        Fl_Box {go[2]} {
+          image {go.png} xywh {406 236 30 30} hide
+        }
+        Fl_Box {stop[2]} {
+          image {stop.png} xywh {406 236 30 30} hide
+        }
+        Fl_Box {amber[2]} {
+          image {amber.png} xywh {406 236 30 30} hide
+        }
+      }
+      Fl_Box {} {
+        label {All 3 test web sites must pass download test.}
+        xywh {125 288 336 25} align 16
+        code0 {o->clear_visible_focus();}
+      }
+    }
+    Fl_Group {group[1]} {
+      label {SMTP server} open selected
+      xywh {109 21 370 294} box GTK_DOWN_FRAME labelcolor 4 align 5 hide
+    } {
+      Fl_Group {} {
+        label Server open
+        xywh {121 39 342 149} box GTK_UP_FRAME labelcolor 107 align 5
+      } {
+        Fl_Box {} {
+          label {Do NOT use an IP address. Use something like "mail.shunk.org". You SHOULD use your remote site Internet providers SMTP to make things easy, for yourself.   }
+          xywh {129 41 327 66} align 148
+          code0 {o->clear_visible_focus();}
+        }
+        Fl_Input smtp {
+          user_data RIGHT_CLICK
+          callback TestSmtpCB
+          xywh {140 110 271 26} box GTK_DOWN_BOX color 215 align 5 when 1
+        }
+        Fl_Input smtp_port {
+          label Port
+          user_data RIGHT_CLICK
+          callback SmtpServerPortCB
+          xywh {163 147 137 26} type Int color 215 labelcolor 107 when 1
+        }
+        Fl_Box {} {
+          label {25 is normal, your ISP may allow others. }
+          xywh {305 145 152 33} align 148
+          code0 {o->clear_visible_focus();}
+        }
+        Fl_Box happy {
+          image {go.png} xywh {420 108 30 30} hide
+        }
+        Fl_Box sad {
+          image {stop.png} xywh {420 108 30 30} hide
+        }
+      }
+      Fl_Choice connection_security {
+        label {Connection Security}
+        callback ConnectionSecutityCB
+        xywh {134 211 317 25} down_box BORDER_BOX color 215 labelcolor 107 align 5 when 1
+        code0 {o->add("None", 0, NULL, 0);}
+        code1 {o->add("Plain text", 0, NULL, (void *)1);}
+        code2 {o->value(0);}
+      } {}
+      Fl_Group password_group {open
+        xywh {134 241 317 50} labelcolor 116 hide
+      } {
+        Fl_Input users_name {
+          label {User name}
+          user_data RIGHT_CLICK
+          callback UsersNameCB
+          xywh {134 258 147 25} color 215 labelcolor 108 align 5 when 1
+        }
+        Fl_Input users_password {
+          label Password
+          user_data RIGHT_CLICK
+          callback UsersPasswordCB
+          xywh {304 258 147 25} color 215 labelcolor 107 align 5 when 1
+        }
+      }
+    }
+    Fl_Group {group[2]} {
+      label {Email  configuration} open
+      xywh {109 21 370 294} box GTK_DOWN_FRAME labelcolor 4 align 5 hide
+    } {
+      Fl_Input email_address {
+        label {Send the email notification to this email address.}
+        user_data RIGHT_CLICK
+        callback TestEmailAddress
+        xywh {137 70 304 25} box GTK_DOWN_BOX color 215 align 133 when 1
+      }
+      Fl_Input subject_IP_address {
+        label {Subject line of email when IP address has changed.}
+        user_data RIGHT_CLICK
+        callback HasContentCB
+        xywh {137 135 304 25} box GTK_UP_BOX color 215 align 133 when 1
+      }
+      Fl_Input subject_bad_server {
+        label {Subject line of email when one of the pages no longer works properly.}
+        user_data RIGHT_CLICK
+        callback HasContentCB
+        xywh {137 204 304 25} color 215 align 133 when 1
+      }
+      Fl_Box {} {
+        label {You will only be notified when the remote IP address changes or when one of the web pages no longer works as needed.}
+        xywh {137 244 304 57} box GTK_DOWN_BOX color 4 selection_color 4 labelcolor 3 align 148
+        code0 {o->clear_visible_focus();}
+      }
+    }
+    Fl_Group {group[3]} {
+      label {IP address isolator} open
+      xywh {109 21 370 294} box GTK_DOWN_FRAME labelcolor 4 align 5 hide
+    } {
+      Fl_Output {resolved[0]} {
+        label {Web site one resolved the IP address to}
+        user_data RIGHT_CLICK
+        xywh {131 59 315 25} box GTK_DOWN_BOX color 246 align 1 when 0
+        code0 {o->clear_visible_focus();}
+      }
+      Fl_Output {resolved[1]} {
+        label {Web site two resolved the IP address to}
+        user_data RIGHT_CLICK
+        xywh {131 115 315 25} box GTK_DOWN_BOX color 246 align 1
+        code0 {o->clear_visible_focus();}
+      }
+      Fl_Output {resolved[2]} {
+        label {Web site three resolved the IP address to}
+        user_data RIGHT_CLICK
+        xywh {131 173 315 25} box GTK_DOWN_BOX color 246 align 1
+        code0 {o->clear_visible_focus();}
+      }
+      Fl_Box {} {
+        label {Success all 3 IP addresses match, you can save and finish. Then you need to upload "eric_the_red.ini" to your remote site.}
+        xywh {131 222 315 57} box GTK_DOWN_BOX color 11 labeltype SHADOW_LABEL labelfont 2 labelcolor 7 align 148
+      }
+    }
+  }
+} 
+
+Function {HelpWindow()} {open
+} {
+  Fl_Window help_window {open
+    xywh {2265 329 550 350} type Double visible
+  } {
+    Fl_Help_View help_view {
+      xywh {0 33 554 317}
+    }
+  }
+} 
+
+decl {\#define RIGHT_CLICK 65536} {public global
+} 
